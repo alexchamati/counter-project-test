@@ -1,17 +1,19 @@
 # counter-project-test
 
-## Installation/Deployment :
-* Build project with :
+### Installation/Deployement Docker :
+
+* build project :
 ```
 docker-compose build
 ```
 
 
-* Run deamon Docker :
+* run deamon :
 ```
 docker-compose up -d
 ```
 
-### App access :
-	http://localhost:8080
+## Access :
+
+> http://localhost:8080
 
