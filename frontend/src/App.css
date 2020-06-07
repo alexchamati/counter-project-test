@@ -1,0 +1,16 @@
+html, body {
+	height: 100vh;
+	margin: 0;
+}
+
+body {
+	background: transparent linear-gradient(180deg, #465BC7 0%, #243171 100%) 0% 0% no-repeat padding-box;
+}
+
+#root {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

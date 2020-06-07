@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend/templatesNginx:/etc/nginx/templates:ro
+    ports:
+      - 8080:80
+    depends_on: 
+      - backend
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend/database:/code/database/
+    environment:
+      - DJANGO_SECRET_KEY=secret_code
