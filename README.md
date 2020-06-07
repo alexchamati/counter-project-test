@@ -2,14 +2,14 @@
 
 ## Installation/Deployment :
 * Build project with :
-```shell
-> docker-compose build
+```
+docker-compose build
 ```
 
 
 * Run deamon Docker :
 ```
-> docker-compose up -d
+docker-compose up -d
 ```
 
 ### App access :
