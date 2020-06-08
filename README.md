@@ -1,10 +1,16 @@
 # counter-project-test
 
+### Requirement :
+
+install docker and docker-compose commands
+
+### go in the project :
+
 ```
 cd counter-project-test
 ```
 
-### run with docker :
+## run with docker :
 
 * build project :
 ```
