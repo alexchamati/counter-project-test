@@ -4,7 +4,7 @@
 cd counter-project-test
 ```
 
-### Deployement docker :
+### run with docker :
 
 * build project :
 ```
@@ -12,7 +12,7 @@ docker-compose build
 ```
 
 
-* start daemon :
+* start :
 ```
 docker-compose up -d
 ```

@@ -7,6 +7,7 @@ from  app.counter.models import Counter
 from  app.counter.api.serializers import CounterSerializer
 
 import json
+import logging
 
 @api_view(['POST'])
 def api_operation(request):
@@ -50,7 +51,12 @@ def api_operation(request):
 
 	serializer = CounterSerializer(counter, data=data)
 	if serializer.is_valid():
-		serializer.save()
+		try:
+			serializer.save()
+		except Exception as e:
+			logging.warning(e)
+			return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 		return Response(data=serializer.data, status=status.HTTP_201_CREATED)
 	
 	return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
