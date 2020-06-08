@@ -1,2 +1,8 @@
+
+# database
 /database/*
 !/database/.gitkeep 
+
+# misc
+.DS_Store
+/env
