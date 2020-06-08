@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view
 from decimal import Decimal
 
 from  app.counter.models import Counter
-from  app.counter.api.counter.serializers import CounterSerializer
+from  app.counter.api.serializers import CounterSerializer
 
 import json
 

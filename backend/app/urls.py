@@ -18,6 +18,5 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('api/counter', include('app.counter.api.counter.urls', 'counter_part')),
-	path('api/history', include('app.counter.api.history.urls', 'history_part')),
+    path('api', include('app.counter.api.urls', 'api_rest')),
 ]

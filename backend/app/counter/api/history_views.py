@@ -1,9 +1,10 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from decimal import Decimal
 
 from  app.counter.models import Counter
-from  app.counter.api.counter.serializers import CounterSerializer
+from  app.counter.api.serializers import CounterSerializer
 
 @api_view(['GET'])
 def api_get_all_history(request):
