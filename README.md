@@ -2,7 +2,7 @@
 
 ### Requirement :
 
-install docker and docker-compose commands
+docker and docker-compose installed
 
 ### go in the project :
 
